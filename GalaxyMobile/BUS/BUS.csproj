@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHoaDonBUS.cs" />
     <Compile Include="ChiTietHoaDonNhapHangBUS.cs" />
     <Compile Include="ChiTietSPBUS.cs" />
     <Compile Include="CuaHangBUS.cs" />
     <Compile Include="DongSanPhamBUS.cs" />
+    <Compile Include="GiaoHangBUS.cs" />
     <Compile Include="HoaDonBUS.cs" />
     <Compile Include="HoaDonNhapHangBUS.cs" />
     <Compile Include="HSXBUS.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="LoaiNvBUS.cs" />
     <Compile Include="LoaiSPBUS.cs" />
     <Compile Include="LoaiTaiKhoanBUS.cs" />
+    <Compile Include="MauBUS.cs" />
     <Compile Include="NhanVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamBUS.cs" />

@@ -22,5 +22,22 @@ namespace DAO
                 return db.HoaDonNhapHangs.ToList();
             }
         }
+        public void ThemHDNhap(HoaDonNhapHang obj)
+        {
+            using (GalaxyMobileEntities db = new GalaxyMobileEntities())
+            {
+                db.HoaDonNhapHangs.Add(obj);
+                db.SaveChanges();
+            }
+        }
+        public void XoaHDNhap(HoaDonNhapHang obj)
+        {
+            using (GalaxyMobileEntities db = new GalaxyMobileEntities())
+            {
+                db.HoaDonNhapHangs.Attach(obj);
+                db.HoaDonNhapHangs.Remove(obj);
+                db.SaveChanges();
+            }
+        }
     }
 }

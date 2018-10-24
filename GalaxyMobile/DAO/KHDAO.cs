@@ -42,6 +42,14 @@ namespace DAO
                 return nv;
             }
         }
+        public KhachHang GetKHByMAKH(string makh)
+        {
+            using (GalaxyMobileEntities dbs = new GalaxyMobileEntities())
+            {
+               return dbs.KhachHangs.Where(p => p.MaKH == makh).SingleOrDefault();
+              
+            }
+        }
 
     }
 }

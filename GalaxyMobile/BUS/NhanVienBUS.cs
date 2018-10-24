@@ -34,5 +34,18 @@ namespace BUS
         {
             return db.KtNV(manv);
         }
+        public static List<NhanVien> GetNVShiper()
+        {
+            return db.GetNVShiper();
+        }
+         public static NhanVien Get1NV(string id)
+        {
+
+            return db.Get1NV(id);
+        }
+        public static List<NhanVien> GetallNVWithoutAdmin()
+        {
+            return db.GetallNVWithoutAdmin();
+        }
     }
 }

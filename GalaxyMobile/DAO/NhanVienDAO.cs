@@ -15,6 +15,14 @@ namespace DAO
                 return dbs.NhanViens.ToList();
             }
         }
+        public List<NhanVien> GetallNVWithoutAdmin()
+        {
+            using (GalaxyMobileEntities dbs = new GalaxyMobileEntities())
+            {
+                return dbs.NhanViens.Where(p => p.MaLoaiNV != "admin").ToList();
+            }
+        }
+
         public void DelNV(string ma)
         {
             using (GalaxyMobileEntities dbs = new GalaxyMobileEntities())
@@ -36,6 +44,22 @@ namespace DAO
             {
                 var nv = dbs.NhanViens.Where(p => p.MaNV == manv).Count();
                 return nv;
+            }
+        }
+        public List<NhanVien> GetNVShiper()
+        {
+            using (GalaxyMobileEntities dbs = new GalaxyMobileEntities())
+            {
+                return dbs.NhanViens.Where(p => p.MaLoaiNV =="shiper").ToList();
+ 
+            }
+        }
+        public NhanVien Get1NV(string id)
+        {
+            using (GalaxyMobileEntities dbs = new GalaxyMobileEntities())
+            {
+                return dbs.NhanViens.Where(p => p.MaNV == id ).SingleOrDefault();
+
             }
         }
     }

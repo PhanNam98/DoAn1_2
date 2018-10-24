@@ -22,5 +22,13 @@ namespace BUS
         {
             return db.GetAllHoaDonNhap();
         }
+        public static void ThemHDNhap(HoaDonNhapHang obj)
+        {
+            db.ThemHDNhap(obj);
+        }
+        public static void XoaHDNhap(HoaDonNhapHang obj)
+        {
+            db.XoaHDNhap(obj);
+        }
     }
 }

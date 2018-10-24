@@ -34,5 +34,9 @@ namespace BUS
         {
             return db.KtKH(ma);
         }
+        public static KhachHang GetKHByMAKH(string makh)
+        {
+           return db.GetKHByMAKH(makh);
+        }
     }
 }

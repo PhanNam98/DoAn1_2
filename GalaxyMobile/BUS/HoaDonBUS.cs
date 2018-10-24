@@ -22,5 +22,31 @@ namespace BUS
         {
             return db.GetAllHoaDonByMaCH(maCH);
         }
+        public static void ThemHoaDon(HoaDon hd)
+        {
+            db.ThemHoaDon(hd);
+        }
+        public static void XoaHoaDon(HoaDon hd)
+        {
+            db.XoaHoaDon(hd);
+        }
+        public static void ThanhToanHoaDon(string idhd, string idch)
+        {
+            db.ThanhToanHoaDon(idhd, idch);
+        }
+        public static void LayHangHoaDon(string idhd, string idch)
+        {
+            db.LayHangHoaDon(idhd, idch);
+
+        }
+        public static void TraHangHoaDon(string idhd, string idch)
+        {
+            db.TraHangHoaDon(idhd, idch);
+
+        }
+        public static void DaThanhToan(string idhd, string idch)
+        {
+            db.DaThanhToan(idhd, idch);
+        }
     }
 }
